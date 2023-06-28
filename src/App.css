@@ -1,0 +1,203 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  margin-top: 100px;
+  overflow-y: scroll;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+html {
+  height: 100%;
+  background-color: rgba(169, 239, 241, 0.904);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 400px);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 30px;
+  align-items:stretch;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 13px 13px 3px 3px  rgba(68, 150, 153, 0.904);
+}
+
+.card_header {
+  width: 100%;
+  padding-top: 15px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 7px;
+  margin-bottom: 17px;
+  font-weight: bold;
+  font-size: 18px;
+  color: rgb(68, 68, 68);
+  background-color: rgba(240, 115, 66, 0.959);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card_header button:hover{
+  background-color: rgb(235, 53, 53);
+}
+.card_header button:focus{
+  background-color: rgb(235, 53, 53);
+}
+.card_header button:active{
+  background-color: rgb(156, 39, 39);
+}
+
+.container_addBlock {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 3px dashed rgba(241, 102, 47, 0.959);
+  border-radius: 20px;
+}
+
+.container_addBlock h2{
+  margin-bottom: 15px;
+  color: rgba(241, 102, 47, 0.959);
+}
+
+.card_addBlock div {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.card_addBlock>div>input {
+  width: 100%;
+  padding: 3px 5px;
+  margin-right: 15px;
+  border-radius: 5px;
+  height: 30px;
+  border: 3px solid rgb(160, 160, 160);
+  margin-bottom: 10px;
+}
+
+.card_addBlock > div > button:hover{
+  background-color: rgba(35, 143, 58, 0.705);
+}
+.card_addBlock > div > button:focus{
+  background-color: rgba(35, 143, 58, 0.705);
+}
+.card_addBlock > div > button:active{
+  background-color: rgba(11, 95, 29, 0.774);
+}
+
+.card_addBlock {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.taskslist_item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 3px;
+  border-bottom: 1px solid rgba(167, 167, 167, 0.719);
+  margin-bottom: 5px;
+}
+
+.taskslist_item button:hover{
+  background-color: rgba(190, 48, 48, 0.671);
+}
+.taskslist_item button:focus{
+  background-color: rgba(190, 48, 48, 0.671);
+}
+.taskslist_item button:active{
+  background-color: rgba(141, 15, 15, 0.808);
+}
+
+.card_list{
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 20px;
+}
+
+.filter-btn-cont{
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 20px;
+}
+
+.filter-btn-cont > button:hover{
+  background-color: rgba(252, 154, 116, 0.959);
+}
+.filter-btn-cont > button:focus{
+  background-color: rgba(252, 154, 116, 0.959);
+}
+.filter-btn-cont > button:active{
+  background-color: rgba(247, 90, 29, 0.959);
+}
+
+.checkbox {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+
+.error{
+  border: 3px solid rgb(182, 18, 18) !important;
+}
+
+.error-message {
+  color: rgb(182, 18, 18) ;
+  font-weight: bold;
+}
+
+.active-filter {
+  background-color: rgba(241, 102, 47, 0.959);
+}
+
+.is-done {
+  opacity: 0.6;
+}
+
+.btn {
+  border: 1px solid transparent;
+  border-radius: 7px;
+  padding: 7px 12px;
+  cursor: pointer;
+  transition: background .2s ease;
+}
+
+.filter-btn{
+  margin-right: 10px;
+}
+
+.editable-input{
+  width: 85%;
+  height: 30px;
+  padding: 3px 5px;
+  border-radius: 5px;
+  background-color: transparent;
+}
